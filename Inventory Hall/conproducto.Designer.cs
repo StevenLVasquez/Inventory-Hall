@@ -1,6 +1,6 @@
 ﻿namespace Inventory_Hall
 {
-    partial class prodistribucion
+    partial class conproducto
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,13 @@
         {
             SuspendLayout();
             // 
-            // prodistribucion
+            // conproducto
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Name = "prodistribucion";
-            Text = "Distribucion de Articulos";
+            Name = "conproducto";
+            Text = "Consulta Producto ";
             ResumeLayout(false);
         }
 

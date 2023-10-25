@@ -42,6 +42,25 @@ namespace Inventory_Hall
             prodistribucion prodistribucion = new prodistribucion();
             prodistribucion.Show();
         }
+
+        private void pRODUCTOToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            conproducto conproducto = new conproducto();
+            conproducto.Show();
+
+        }
+
+        private void eMPLEADOToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            conempleado conempleado = new conempleado();
+            conempleado.Show();
+        }
+
+        private void sUPLIDORToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            consuplidor consuplidor = new consuplidor();   
+            consuplidor.Show();
+        }
     }
 }
 

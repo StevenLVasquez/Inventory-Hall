@@ -88,12 +88,14 @@
             eMPLEADOToolStripMenuItem.Name = "eMPLEADOToolStripMenuItem";
             eMPLEADOToolStripMenuItem.Size = new Size(180, 22);
             eMPLEADOToolStripMenuItem.Text = "EMPLEADO";
+            eMPLEADOToolStripMenuItem.Click += eMPLEADOToolStripMenuItem_Click;
             // 
             // sUPLIDORToolStripMenuItem
             // 
             sUPLIDORToolStripMenuItem.Name = "sUPLIDORToolStripMenuItem";
             sUPLIDORToolStripMenuItem.Size = new Size(180, 22);
             sUPLIDORToolStripMenuItem.Text = "SUPLIDOR";
+            sUPLIDORToolStripMenuItem.Click += sUPLIDORToolStripMenuItem_Click;
             // 
             // pROCESOToolStripMenuItem
             // 

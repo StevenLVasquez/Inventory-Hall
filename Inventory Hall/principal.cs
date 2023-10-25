@@ -34,7 +34,13 @@ namespace Inventory_Hall
         private void sUPLIDORToolStripMenuItem_Click(object sender, EventArgs e)
         {
             agrsuplidor agrsuplidor = new agrsuplidor();
-            agrsuplidor.Show(); 
+            agrsuplidor.Show();
+        }
+
+        private void dISTRIBUCIONDEARTICULOSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            prodistribucion prodistribucion = new prodistribucion();
+            prodistribucion.Show();
         }
     }
 }

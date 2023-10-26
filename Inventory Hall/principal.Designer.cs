@@ -35,13 +35,13 @@
             eMPLEADOToolStripMenuItem = new ToolStripMenuItem();
             sUPLIDORToolStripMenuItem = new ToolStripMenuItem();
             pROCESOToolStripMenuItem = new ToolStripMenuItem();
-            dISTRIBUCIONDEARTICULOSToolStripMenuItem = new ToolStripMenuItem();
             cONSULTAToolStripMenuItem = new ToolStripMenuItem();
             pRODUCTOToolStripMenuItem1 = new ToolStripMenuItem();
             eMPLEADOToolStripMenuItem1 = new ToolStripMenuItem();
             sUPLIDORToolStripMenuItem1 = new ToolStripMenuItem();
             sISTEMAToolStripMenuItem = new ToolStripMenuItem();
             aCERCADEToolStripMenuItem = new ToolStripMenuItem();
+            dISTRIBUCIONDECATEGORIAToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -79,37 +79,30 @@
             // pRODUCTOToolStripMenuItem
             // 
             pRODUCTOToolStripMenuItem.Name = "pRODUCTOToolStripMenuItem";
-            pRODUCTOToolStripMenuItem.Size = new Size(138, 22);
+            pRODUCTOToolStripMenuItem.Size = new Size(180, 22);
             pRODUCTOToolStripMenuItem.Text = "PRODUCTO ";
             pRODUCTOToolStripMenuItem.Click += pRODUCTOToolStripMenuItem_Click;
             // 
             // eMPLEADOToolStripMenuItem
             // 
             eMPLEADOToolStripMenuItem.Name = "eMPLEADOToolStripMenuItem";
-            eMPLEADOToolStripMenuItem.Size = new Size(138, 22);
+            eMPLEADOToolStripMenuItem.Size = new Size(180, 22);
             eMPLEADOToolStripMenuItem.Text = "EMPLEADO";
             eMPLEADOToolStripMenuItem.Click += eMPLEADOToolStripMenuItem_Click;
             // 
             // sUPLIDORToolStripMenuItem
             // 
             sUPLIDORToolStripMenuItem.Name = "sUPLIDORToolStripMenuItem";
-            sUPLIDORToolStripMenuItem.Size = new Size(138, 22);
+            sUPLIDORToolStripMenuItem.Size = new Size(180, 22);
             sUPLIDORToolStripMenuItem.Text = "SUPLIDOR";
             sUPLIDORToolStripMenuItem.Click += sUPLIDORToolStripMenuItem_Click;
             // 
             // pROCESOToolStripMenuItem
             // 
-            pROCESOToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { dISTRIBUCIONDEARTICULOSToolStripMenuItem });
+            pROCESOToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { dISTRIBUCIONDECATEGORIAToolStripMenuItem });
             pROCESOToolStripMenuItem.Name = "pROCESOToolStripMenuItem";
             pROCESOToolStripMenuItem.Size = new Size(71, 20);
             pROCESOToolStripMenuItem.Text = "PROCESO";
-            // 
-            // dISTRIBUCIONDEARTICULOSToolStripMenuItem
-            // 
-            dISTRIBUCIONDEARTICULOSToolStripMenuItem.Name = "dISTRIBUCIONDEARTICULOSToolStripMenuItem";
-            dISTRIBUCIONDEARTICULOSToolStripMenuItem.Size = new Size(234, 22);
-            dISTRIBUCIONDEARTICULOSToolStripMenuItem.Text = "DISTRIBUCION DE ARTICULOS ";
-            dISTRIBUCIONDEARTICULOSToolStripMenuItem.Click += dISTRIBUCIONDEARTICULOSToolStripMenuItem_Click;
             // 
             // cONSULTAToolStripMenuItem
             // 
@@ -122,21 +115,21 @@
             // pRODUCTOToolStripMenuItem1
             // 
             pRODUCTOToolStripMenuItem1.Name = "pRODUCTOToolStripMenuItem1";
-            pRODUCTOToolStripMenuItem1.Size = new Size(180, 22);
+            pRODUCTOToolStripMenuItem1.Size = new Size(138, 22);
             pRODUCTOToolStripMenuItem1.Text = "PRODUCTO";
             pRODUCTOToolStripMenuItem1.Click += pRODUCTOToolStripMenuItem1_Click;
             // 
             // eMPLEADOToolStripMenuItem1
             // 
             eMPLEADOToolStripMenuItem1.Name = "eMPLEADOToolStripMenuItem1";
-            eMPLEADOToolStripMenuItem1.Size = new Size(180, 22);
+            eMPLEADOToolStripMenuItem1.Size = new Size(138, 22);
             eMPLEADOToolStripMenuItem1.Text = "EMPLEADO ";
             eMPLEADOToolStripMenuItem1.Click += eMPLEADOToolStripMenuItem1_Click;
             // 
             // sUPLIDORToolStripMenuItem1
             // 
             sUPLIDORToolStripMenuItem1.Name = "sUPLIDORToolStripMenuItem1";
-            sUPLIDORToolStripMenuItem1.Size = new Size(180, 22);
+            sUPLIDORToolStripMenuItem1.Size = new Size(138, 22);
             sUPLIDORToolStripMenuItem1.Text = "SUPLIDOR ";
             sUPLIDORToolStripMenuItem1.Click += sUPLIDORToolStripMenuItem1_Click;
             // 
@@ -152,6 +145,13 @@
             aCERCADEToolStripMenuItem.Name = "aCERCADEToolStripMenuItem";
             aCERCADEToolStripMenuItem.Size = new Size(139, 22);
             aCERCADEToolStripMenuItem.Text = "ACERCA DE ";
+            // 
+            // dISTRIBUCIONDECATEGORIAToolStripMenuItem
+            // 
+            dISTRIBUCIONDECATEGORIAToolStripMenuItem.Name = "dISTRIBUCIONDECATEGORIAToolStripMenuItem";
+            dISTRIBUCIONDECATEGORIAToolStripMenuItem.Size = new Size(236, 22);
+            dISTRIBUCIONDECATEGORIAToolStripMenuItem.Text = "DISTRIBUCION DE CATEGORIA ";
+            dISTRIBUCIONDECATEGORIAToolStripMenuItem.Click += dISTRIBUCIONDECATEGORIAToolStripMenuItem_Click;
             // 
             // principal
             // 
@@ -182,12 +182,12 @@
         private ToolStripMenuItem eMPLEADOToolStripMenuItem;
         private ToolStripMenuItem sUPLIDORToolStripMenuItem;
         private ToolStripMenuItem pROCESOToolStripMenuItem;
-        private ToolStripMenuItem dISTRIBUCIONDEARTICULOSToolStripMenuItem;
         private ToolStripMenuItem cONSULTAToolStripMenuItem;
         private ToolStripMenuItem pRODUCTOToolStripMenuItem1;
         private ToolStripMenuItem eMPLEADOToolStripMenuItem1;
         private ToolStripMenuItem sUPLIDORToolStripMenuItem1;
         private ToolStripMenuItem sISTEMAToolStripMenuItem;
         private ToolStripMenuItem aCERCADEToolStripMenuItem;
+        private ToolStripMenuItem dISTRIBUCIONDECATEGORIAToolStripMenuItem;
     }
 }

@@ -39,12 +39,7 @@ namespace Inventory_Hall
             agrsuplidor agrsuplidor = new agrsuplidor();
             agrsuplidor.ShowDialog(); // here im just using showdialog to see if it works , later ill change it if it gives me any problems with the code 
         }
-        //calling form ( pro_distribucion de articulos)
-        private void dISTRIBUCIONDEARTICULOSToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            prodistribucion prodistribucion = new prodistribucion();
-            prodistribucion.ShowDialog();
-        }
+
         // calling form ( con_producto )
         private void pRODUCTOToolStripMenuItem1_Click(object sender, EventArgs e)
         {
@@ -61,8 +56,14 @@ namespace Inventory_Hall
         //calling form ( con_suplidor )
         private void sUPLIDORToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            consuplidor consuplidor = new consuplidor();   
+            consuplidor consuplidor = new consuplidor();
             consuplidor.ShowDialog();
+        }
+
+        private void dISTRIBUCIONDECATEGORIAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            prodistribucion prodistribucion = new prodistribucion();
+            prodistribucion.ShowDialog();
         }
     }
 }

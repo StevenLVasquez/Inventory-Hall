@@ -36,7 +36,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Name = "prodistribucion";
-            Text = "Distribucion de Articulos";
+            Text = "Distribucion de Categoria";
             ResumeLayout(false);
         }
 

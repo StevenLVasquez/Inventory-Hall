@@ -16,5 +16,10 @@ namespace Inventory_Hall
         {
             InitializeComponent();
         }
+
+        private void consuplidor_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

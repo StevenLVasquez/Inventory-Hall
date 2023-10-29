@@ -1,6 +1,6 @@
 ﻿namespace Inventory_Hall
 {
-    partial class consuplidor
+    partial class sisacercade
     {
         /// <summary>
         /// Required designer variable.
@@ -28,21 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(consuplidor));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(sisacercade));
+            groupBox1 = new GroupBox();
             SuspendLayout();
             // 
-            // consuplidor
+            // groupBox1
+            // 
+            groupBox1.Location = new Point(265, 128);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(200, 121);
+            groupBox1.TabIndex = 0;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Esto programa esta hecho por steven ";
+            // 
+            // sisacercade
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(groupBox1);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Name = "consuplidor";
-            Text = "Consulta Suplidor";
-            Load += consuplidor_Load;
+            Name = "sisacercade";
+            Text = "Acerca De";
             ResumeLayout(false);
         }
 
         #endregion
+
+        private GroupBox groupBox1;
     }
 }

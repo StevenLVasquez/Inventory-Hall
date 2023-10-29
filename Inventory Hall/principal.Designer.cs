@@ -35,13 +35,13 @@
             eMPLEADOToolStripMenuItem = new ToolStripMenuItem();
             sUPLIDORToolStripMenuItem = new ToolStripMenuItem();
             pROCESOToolStripMenuItem = new ToolStripMenuItem();
+            dISTRIBUCIONDECATEGORIAToolStripMenuItem = new ToolStripMenuItem();
             cONSULTAToolStripMenuItem = new ToolStripMenuItem();
             pRODUCTOToolStripMenuItem1 = new ToolStripMenuItem();
             eMPLEADOToolStripMenuItem1 = new ToolStripMenuItem();
             sUPLIDORToolStripMenuItem1 = new ToolStripMenuItem();
             sISTEMAToolStripMenuItem = new ToolStripMenuItem();
             aCERCADEToolStripMenuItem = new ToolStripMenuItem();
-            dISTRIBUCIONDECATEGORIAToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -51,7 +51,7 @@
             btncerrar.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btncerrar.Image = Properties.Resources._330399_bad_cancel_clear_close_decline_icon;
             btncerrar.ImageAlign = ContentAlignment.TopCenter;
-            btncerrar.Location = new Point(720, 27);
+            btncerrar.Location = new Point(708, 27);
             btncerrar.Name = "btncerrar";
             btncerrar.Size = new Size(80, 74);
             btncerrar.TabIndex = 0;
@@ -62,6 +62,7 @@
             // 
             // menuStrip1
             // 
+            menuStrip1.BackColor = Color.FromArgb(0, 192, 192);
             menuStrip1.Items.AddRange(new ToolStripItem[] { eNTRADAToolStripMenuItem, pROCESOToolStripMenuItem, cONSULTAToolStripMenuItem, sISTEMAToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
@@ -79,21 +80,21 @@
             // pRODUCTOToolStripMenuItem
             // 
             pRODUCTOToolStripMenuItem.Name = "pRODUCTOToolStripMenuItem";
-            pRODUCTOToolStripMenuItem.Size = new Size(180, 22);
+            pRODUCTOToolStripMenuItem.Size = new Size(138, 22);
             pRODUCTOToolStripMenuItem.Text = "PRODUCTO ";
             pRODUCTOToolStripMenuItem.Click += pRODUCTOToolStripMenuItem_Click;
             // 
             // eMPLEADOToolStripMenuItem
             // 
             eMPLEADOToolStripMenuItem.Name = "eMPLEADOToolStripMenuItem";
-            eMPLEADOToolStripMenuItem.Size = new Size(180, 22);
+            eMPLEADOToolStripMenuItem.Size = new Size(138, 22);
             eMPLEADOToolStripMenuItem.Text = "EMPLEADO";
             eMPLEADOToolStripMenuItem.Click += eMPLEADOToolStripMenuItem_Click;
             // 
             // sUPLIDORToolStripMenuItem
             // 
             sUPLIDORToolStripMenuItem.Name = "sUPLIDORToolStripMenuItem";
-            sUPLIDORToolStripMenuItem.Size = new Size(180, 22);
+            sUPLIDORToolStripMenuItem.Size = new Size(138, 22);
             sUPLIDORToolStripMenuItem.Text = "SUPLIDOR";
             sUPLIDORToolStripMenuItem.Click += sUPLIDORToolStripMenuItem_Click;
             // 
@@ -103,6 +104,13 @@
             pROCESOToolStripMenuItem.Name = "pROCESOToolStripMenuItem";
             pROCESOToolStripMenuItem.Size = new Size(71, 20);
             pROCESOToolStripMenuItem.Text = "PROCESO";
+            // 
+            // dISTRIBUCIONDECATEGORIAToolStripMenuItem
+            // 
+            dISTRIBUCIONDECATEGORIAToolStripMenuItem.Name = "dISTRIBUCIONDECATEGORIAToolStripMenuItem";
+            dISTRIBUCIONDECATEGORIAToolStripMenuItem.Size = new Size(236, 22);
+            dISTRIBUCIONDECATEGORIAToolStripMenuItem.Text = "DISTRIBUCION DE CATEGORIA ";
+            dISTRIBUCIONDECATEGORIAToolStripMenuItem.Click += dISTRIBUCIONDECATEGORIAToolStripMenuItem_Click;
             // 
             // cONSULTAToolStripMenuItem
             // 
@@ -143,15 +151,9 @@
             // aCERCADEToolStripMenuItem
             // 
             aCERCADEToolStripMenuItem.Name = "aCERCADEToolStripMenuItem";
-            aCERCADEToolStripMenuItem.Size = new Size(139, 22);
+            aCERCADEToolStripMenuItem.Size = new Size(180, 22);
             aCERCADEToolStripMenuItem.Text = "ACERCA DE ";
-            // 
-            // dISTRIBUCIONDECATEGORIAToolStripMenuItem
-            // 
-            dISTRIBUCIONDECATEGORIAToolStripMenuItem.Name = "dISTRIBUCIONDECATEGORIAToolStripMenuItem";
-            dISTRIBUCIONDECATEGORIAToolStripMenuItem.Size = new Size(236, 22);
-            dISTRIBUCIONDECATEGORIAToolStripMenuItem.Text = "DISTRIBUCION DE CATEGORIA ";
-            dISTRIBUCIONDECATEGORIAToolStripMenuItem.Click += dISTRIBUCIONDECATEGORIAToolStripMenuItem_Click;
+            aCERCADEToolStripMenuItem.Click += aCERCADEToolStripMenuItem_Click;
             // 
             // principal
             // 

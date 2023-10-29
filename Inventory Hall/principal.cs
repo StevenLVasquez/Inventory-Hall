@@ -5,7 +5,13 @@ namespace Inventory_Hall
         public principal()
         {
             InitializeComponent();
+
+            KeyPreview = true; // Enable key preview for the form
+            KeyDown += (sender, e) => { if (e.KeyCode == Keys.Escape) Dispose(); };
+
         }
+
+
 
         //disposes the program , meaning it wont consume any resources since it is now completely closed 
         private void btncerrar_Click(object sender, EventArgs e)
@@ -64,6 +70,12 @@ namespace Inventory_Hall
         {
             prodistribucion prodistribucion = new prodistribucion();
             prodistribucion.ShowDialog();
+        }
+
+        private void aCERCADEToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            sisacercade sisacercade = new sisacercade();
+            sisacercade.ShowDialog();
         }
     }
 }

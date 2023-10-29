@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(agrempleado));
             SuspendLayout();
             // 
             // agrempleado
@@ -35,8 +36,11 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "agrempleado";
             Text = "Entrada de Empleado";
+            TransparencyKey = Color.Transparent;
+            Load += agrempleado_Load;
             ResumeLayout(false);
         }
 

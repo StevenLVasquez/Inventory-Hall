@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace Inventory_Hall
 {
-    public partial class agrempleado : Form
+    public partial class sisacercade : Form
     {
-        public agrempleado()
+        public sisacercade()
         {
             InitializeComponent();
         }
 
-        private void agrempleado_Load(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }

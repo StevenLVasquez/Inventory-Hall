@@ -34,12 +34,13 @@
             // 
             // groupBox1
             // 
-            groupBox1.Location = new Point(265, 128);
+            groupBox1.Location = new Point(239, 110);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(200, 121);
+            groupBox1.Size = new Size(294, 192);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
-            groupBox1.Text = "Esto programa esta hecho por steven ";
+            groupBox1.Text = "hola aqui va info del sistema";
+            groupBox1.Enter += groupBox1_Enter_1;
             // 
             // sisacercade
             // 

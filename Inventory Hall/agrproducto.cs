@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,17 +13,32 @@ namespace Inventory_Hall
 {
     public partial class agrproducto : Form
     {
+
         public agrproducto()
         {
             InitializeComponent();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void insertarbtn_Click(object sender, EventArgs e)
         {
+            nombretxt.Enabled = true;
+            categoriatxt.Enabled = true;
+            descripciontxt.Enabled = true;
+            stocktxt.Enabled = true;
+            suplidortxt.Enabled = true;
+            secciontxt.Enabled = true;
+
+            nombretxt.BackColor = Color.White;
+            categoriatxt.BackColor = Color.White;
+            descripciontxt.BackColor = Color.White;
+            stocktxt.BackColor = Color.White;
+            suplidortxt.BackColor = Color.White;
+            secciontxt.BackColor = Color.White;
+
 
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void agrproducto_Load(object sender, EventArgs e)
         {
 
         }

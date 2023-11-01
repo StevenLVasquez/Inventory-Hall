@@ -1,3 +1,5 @@
+using Microsoft.Data.SqlClient;
+
 namespace Inventory_Hall
 {
     public partial class principal : Form
@@ -76,6 +78,11 @@ namespace Inventory_Hall
         {
             sisacercade sisacercade = new sisacercade();
             sisacercade.ShowDialog();
+        }
+
+        private void principal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

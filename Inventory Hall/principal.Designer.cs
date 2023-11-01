@@ -151,7 +151,7 @@
             // aCERCADEToolStripMenuItem
             // 
             aCERCADEToolStripMenuItem.Name = "aCERCADEToolStripMenuItem";
-            aCERCADEToolStripMenuItem.Size = new Size(180, 22);
+            aCERCADEToolStripMenuItem.Size = new Size(139, 22);
             aCERCADEToolStripMenuItem.Text = "ACERCA DE ";
             aCERCADEToolStripMenuItem.Click += aCERCADEToolStripMenuItem_Click;
             // 
@@ -169,6 +169,7 @@
             Name = "principal";
             Text = "Inventory Hall";
             WindowState = FormWindowState.Maximized;
+            Load += principal_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);

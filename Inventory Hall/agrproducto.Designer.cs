@@ -131,6 +131,7 @@
             guardarbtn.TabIndex = 7;
             guardarbtn.Text = "Guardar";
             guardarbtn.UseVisualStyleBackColor = false;
+            guardarbtn.Click += guardarbtn_Click;
             // 
             // nombretxt
             // 

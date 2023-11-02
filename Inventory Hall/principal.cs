@@ -1,4 +1,6 @@
 using Microsoft.Data.SqlClient;
+using System;
+using System.Configuration;
 
 namespace Inventory_Hall
 {

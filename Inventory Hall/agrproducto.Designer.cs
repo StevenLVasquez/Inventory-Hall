@@ -152,6 +152,7 @@
             categoriatxt.Name = "categoriatxt";
             categoriatxt.Size = new Size(355, 23);
             categoriatxt.TabIndex = 9;
+            categoriatxt.TextChanged += categoriatxt_TextChanged;
             // 
             // descripciontxt
             // 

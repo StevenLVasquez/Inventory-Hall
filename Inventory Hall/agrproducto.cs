@@ -77,5 +77,10 @@ namespace Inventory_Hall
                 MessageBox.Show("ERROR: " + ex.Message);
             }
         }
+
+        private void categoriatxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

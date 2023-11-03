@@ -36,13 +36,13 @@
             telefonoLB = new Label();
             descripcionLB = new Label();
             nombretxt = new TextBox();
-            rnctxt = new TextBox();
             direcciontxt = new TextBox();
             emailtxt = new TextBox();
-            telefonotxt = new TextBox();
             descripciontxt = new TextBox();
             insertarbtn = new Button();
             guardarbtn = new Button();
+            telefonotxt = new MaskedTextBox();
+            rnctxt = new MaskedTextBox();
             SuspendLayout();
             // 
             // nombreLB
@@ -114,15 +114,6 @@
             nombretxt.Size = new Size(395, 23);
             nombretxt.TabIndex = 6;
             // 
-            // rnctxt
-            // 
-            rnctxt.BackColor = SystemColors.ScrollBar;
-            rnctxt.Enabled = false;
-            rnctxt.Location = new Point(137, 99);
-            rnctxt.Name = "rnctxt";
-            rnctxt.Size = new Size(395, 23);
-            rnctxt.TabIndex = 7;
-            // 
             // direcciontxt
             // 
             direcciontxt.BackColor = SystemColors.ScrollBar;
@@ -140,15 +131,6 @@
             emailtxt.Name = "emailtxt";
             emailtxt.Size = new Size(395, 23);
             emailtxt.TabIndex = 9;
-            // 
-            // telefonotxt
-            // 
-            telefonotxt.BackColor = SystemColors.ScrollBar;
-            telefonotxt.Enabled = false;
-            telefonotxt.Location = new Point(137, 254);
-            telefonotxt.Name = "telefonotxt";
-            telefonotxt.Size = new Size(395, 23);
-            telefonotxt.TabIndex = 10;
             // 
             // descripciontxt
             // 
@@ -183,18 +165,40 @@
             guardarbtn.UseVisualStyleBackColor = false;
             guardarbtn.Click += guardarbtn_Click;
             // 
+            // telefonotxt
+            // 
+            telefonotxt.BackColor = SystemColors.ScrollBar;
+            telefonotxt.Enabled = false;
+            telefonotxt.Location = new Point(137, 254);
+            telefonotxt.Mask = "(999) 000-0000";
+            telefonotxt.Name = "telefonotxt";
+            telefonotxt.Size = new Size(89, 23);
+            telefonotxt.TabIndex = 10;
+            telefonotxt.MaskInputRejected += maskedTextBox1_MaskInputRejected;
+            // 
+            // rnctxt
+            // 
+            rnctxt.BackColor = SystemColors.ScrollBar;
+            rnctxt.Enabled = false;
+            rnctxt.Location = new Point(137, 104);
+            rnctxt.Mask = "0-0000000-0";
+            rnctxt.Name = "rnctxt";
+            rnctxt.Size = new Size(89, 23);
+            rnctxt.TabIndex = 7;
+            rnctxt.MaskInputRejected += rnctxt_MaskInputRejected;
+            // 
             // agrsuplidor
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(rnctxt);
+            Controls.Add(telefonotxt);
             Controls.Add(guardarbtn);
             Controls.Add(insertarbtn);
             Controls.Add(descripciontxt);
-            Controls.Add(telefonotxt);
             Controls.Add(emailtxt);
             Controls.Add(direcciontxt);
-            Controls.Add(rnctxt);
             Controls.Add(nombretxt);
             Controls.Add(descripcionLB);
             Controls.Add(telefonoLB);
@@ -219,12 +223,12 @@
         private Label telefonoLB;
         private Label descripcionLB;
         private TextBox nombretxt;
-        private TextBox rnctxt;
         private TextBox direcciontxt;
         private TextBox emailtxt;
-        private TextBox telefonotxt;
         private TextBox descripciontxt;
         private Button insertarbtn;
         private Button guardarbtn;
+        private MaskedTextBox telefonotxt;
+        private MaskedTextBox rnctxt;
     }
 }

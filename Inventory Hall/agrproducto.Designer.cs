@@ -40,9 +40,9 @@
             nombretxt = new TextBox();
             descripciontxt = new TextBox();
             stocktxt = new TextBox();
-            suplidortxt = new TextBox();
             secciontxt = new TextBox();
             categoriabox = new ComboBox();
+            idsuplidortxt = new ComboBox();
             SuspendLayout();
             // 
             // LBnombre
@@ -163,16 +163,6 @@
             stocktxt.Size = new Size(355, 23);
             stocktxt.TabIndex = 11;
             // 
-            // suplidortxt
-            // 
-            suplidortxt.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            suplidortxt.BackColor = SystemColors.ControlDark;
-            suplidortxt.Enabled = false;
-            suplidortxt.Location = new Point(170, 264);
-            suplidortxt.Name = "suplidortxt";
-            suplidortxt.Size = new Size(355, 23);
-            suplidortxt.TabIndex = 12;
-            // 
             // secciontxt
             // 
             secciontxt.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
@@ -191,17 +181,28 @@
             categoriabox.Location = new Point(170, 101);
             categoriabox.Name = "categoriabox";
             categoriabox.Size = new Size(189, 23);
-            categoriabox.TabIndex = 14;
+            categoriabox.TabIndex = 9;
             categoriabox.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            // 
+            // idsuplidortxt
+            // 
+            idsuplidortxt.BackColor = SystemColors.ScrollBar;
+            idsuplidortxt.Enabled = false;
+            idsuplidortxt.FormattingEnabled = true;
+            idsuplidortxt.Location = new Point(170, 270);
+            idsuplidortxt.Name = "idsuplidortxt";
+            idsuplidortxt.Size = new Size(121, 23);
+            idsuplidortxt.TabIndex = 12;
+            idsuplidortxt.SelectedIndexChanged += idsuplidortxt_SelectedIndexChanged;
             // 
             // agrproducto
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(idsuplidortxt);
             Controls.Add(categoriabox);
             Controls.Add(secciontxt);
-            Controls.Add(suplidortxt);
             Controls.Add(stocktxt);
             Controls.Add(descripciontxt);
             Controls.Add(nombretxt);
@@ -236,8 +237,8 @@
         private TextBox nombretxt;
         private TextBox descripciontxt;
         private TextBox stocktxt;
-        private TextBox suplidortxt;
         private TextBox secciontxt;
         private ComboBox categoriabox;
+        private ComboBox idsuplidortxt;
     }
 }

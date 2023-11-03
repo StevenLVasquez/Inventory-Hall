@@ -55,10 +55,15 @@ namespace Inventory_Hall
                 {
                     // Add parameters using AddWithValue
                     command.Parameters.AddWithValue("@nombre", nombretxt.Text);
-                    command.Parameters.AddWithValue("@rnc", rnctxt.Text);
                     command.Parameters.AddWithValue("@direccion", direcciontxt.Text);
                     command.Parameters.AddWithValue("@email", emailtxt.Text);
-                    command.Parameters.AddWithValue("@telefono", telefonotxt.Text);
+
+                    string rnc = rnctxt.Text.Replace(" ", ""); // Remove spaces or any other formatting
+                    command.Parameters.AddWithValue("@rnc", rnc);
+
+                    string phoneNumber = telefonotxt.Text.Replace("-", ""); // Remove hyphens or any other formatting
+                    command.Parameters.AddWithValue("@telefono", phoneNumber);
+
                     command.Parameters.AddWithValue("@descripcion", descripciontxt.Text);
 
                     // Execute the SQL command
@@ -79,6 +84,16 @@ namespace Inventory_Hall
             {
                 MessageBox.Show("ERROR HAS INSERTADO UN DATO MAL: " + ex.Message);
             }
+        }
+
+        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void rnctxt_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
         }
     }
 }

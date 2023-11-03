@@ -24,6 +24,10 @@ namespace Inventory_Hall
 
             // Populate the ComboBox with data from the "categoria" table when the form loads
             PopulateCategoriaComboBox();
+
+            // Populate the idsuplidortxt ComboBox with data from the "suplidor" table when the form loads
+            PopulateSuplidorComboBox();
+
         }
 
         private void PopulateCategoriaComboBox()
@@ -48,19 +52,39 @@ namespace Inventory_Hall
             }
         }
 
+        private void PopulateSuplidorComboBox()
+        {
+            // Assuming that idsuplidortxt is the name of your ComboBox
+            idsuplidortxt.Items.Clear(); // Clear any existing items
+            string query = "SELECT id, nombre FROM suplidor";
+            using (SqlCommand command = new SqlCommand(query, databaseManager.GetConnection()))
+            {
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        string id = reader["id"].ToString();
+                        string nombre = reader["nombre"].ToString();
+                        string displayText = $"{id} - {nombre}"; // Combine id and nombre
+                        idsuplidortxt.Items.Add(displayText);
+                    }
+                }
+            }
+        }
+
         private void insertarbtn_Click(object sender, EventArgs e)
         {
             nombretxt.Enabled = true;
             descripciontxt.Enabled = true;
             stocktxt.Enabled = true;
-            suplidortxt.Enabled = true;
+            idsuplidortxt.Enabled = true;
             secciontxt.Enabled = true;
             categoriabox.Enabled = true;
 
             nombretxt.BackColor = Color.White;
             descripciontxt.BackColor = Color.White;
             stocktxt.BackColor = Color.White;
-            suplidortxt.BackColor = Color.White;
+            idsuplidortxt.BackColor = Color.White;
             secciontxt.BackColor = Color.White;
             categoriabox.BackColor = Color.White;
             // Execute an Sql command using the DatabaseManager class i created earlier
@@ -74,6 +98,7 @@ namespace Inventory_Hall
         {
             // Call the method to populate the ComboBox when the form loads
             PopulateCategoriaComboBox();
+            PopulateSuplidorComboBox();
 
         }
 
@@ -95,7 +120,12 @@ namespace Inventory_Hall
 
                     command.Parameters.AddWithValue("@descripcion", descripciontxt.Text);
                     command.Parameters.AddWithValue("@stock", stocktxt.Text);
-                    command.Parameters.AddWithValue("@idsuplidor", suplidortxt.Text);
+
+                    string selectedSuplidor = idsuplidortxt.SelectedItem.ToString();
+                    string[] suplidorParts = selectedSuplidor.Split(new[] { " - " }, StringSplitOptions.None);
+                    string selectedSuplidorId = suplidorParts[0]; // Extract the "id" part
+                    command.Parameters.AddWithValue("@idsuplidor", selectedSuplidorId);
+
                     command.Parameters.AddWithValue("@seccion", secciontxt.Text);
 
                     // Execute the SQL command
@@ -103,11 +133,20 @@ namespace Inventory_Hall
                 }
 
                 MessageBox.Show("Data insertada correctamente.");
+
+                nombretxt.Text = "";
+                categoriabox.Text = "";
+                descripciontxt.Text = "";
+                stocktxt.Text = "";
+                idsuplidortxt.Text = "";
+                secciontxt.Text = "";
+
             }
 
             catch (Exception ex)
             {
                 MessageBox.Show("ERROR: " + ex.Message);
+
             }
         }
 
@@ -120,5 +159,13 @@ namespace Inventory_Hall
 
             // Use the selected category as needed in your code
         }
+
+        private void idsuplidortxt_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedSuplidor = idsuplidortxt.SelectedItem.ToString();
+
+        }
+
+
     }
 }

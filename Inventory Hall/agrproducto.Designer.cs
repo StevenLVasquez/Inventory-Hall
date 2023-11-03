@@ -38,11 +38,11 @@
             insertarbtn = new Button();
             guardarbtn = new Button();
             nombretxt = new TextBox();
-            categoriatxt = new TextBox();
             descripciontxt = new TextBox();
             stocktxt = new TextBox();
             suplidortxt = new TextBox();
             secciontxt = new TextBox();
+            categoriabox = new ComboBox();
             SuspendLayout();
             // 
             // LBnombre
@@ -110,7 +110,7 @@
             insertarbtn.BackColor = Color.DarkTurquoise;
             insertarbtn.Cursor = Cursors.Hand;
             insertarbtn.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            insertarbtn.Location = new Point(139, 398);
+            insertarbtn.Location = new Point(170, 398);
             insertarbtn.Name = "insertarbtn";
             insertarbtn.Size = new Size(75, 23);
             insertarbtn.TabIndex = 6;
@@ -125,7 +125,7 @@
             guardarbtn.Cursor = Cursors.Hand;
             guardarbtn.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             guardarbtn.ForeColor = SystemColors.ControlText;
-            guardarbtn.Location = new Point(499, 398);
+            guardarbtn.Location = new Point(450, 398);
             guardarbtn.Name = "guardarbtn";
             guardarbtn.Size = new Size(75, 27);
             guardarbtn.TabIndex = 7;
@@ -142,17 +142,6 @@
             nombretxt.Name = "nombretxt";
             nombretxt.Size = new Size(355, 23);
             nombretxt.TabIndex = 8;
-            // 
-            // categoriatxt
-            // 
-            categoriatxt.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            categoriatxt.BackColor = SystemColors.ControlDark;
-            categoriatxt.Enabled = false;
-            categoriatxt.Location = new Point(170, 107);
-            categoriatxt.Name = "categoriatxt";
-            categoriatxt.Size = new Size(355, 23);
-            categoriatxt.TabIndex = 9;
-            categoriatxt.TextChanged += categoriatxt_TextChanged;
             // 
             // descripciontxt
             // 
@@ -194,16 +183,27 @@
             secciontxt.Size = new Size(355, 23);
             secciontxt.TabIndex = 13;
             // 
+            // categoriabox
+            // 
+            categoriabox.BackColor = SystemColors.ScrollBar;
+            categoriabox.Enabled = false;
+            categoriabox.FormattingEnabled = true;
+            categoriabox.Location = new Point(170, 101);
+            categoriabox.Name = "categoriabox";
+            categoriabox.Size = new Size(189, 23);
+            categoriabox.TabIndex = 14;
+            categoriabox.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            // 
             // agrproducto
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(categoriabox);
             Controls.Add(secciontxt);
             Controls.Add(suplidortxt);
             Controls.Add(stocktxt);
             Controls.Add(descripciontxt);
-            Controls.Add(categoriatxt);
             Controls.Add(nombretxt);
             Controls.Add(guardarbtn);
             Controls.Add(insertarbtn);
@@ -234,10 +234,10 @@
         private Button insertarbtn;
         private Button guardarbtn;
         private TextBox nombretxt;
-        private TextBox categoriatxt;
         private TextBox descripciontxt;
         private TextBox stocktxt;
         private TextBox suplidortxt;
         private TextBox secciontxt;
+        private ComboBox categoriabox;
     }
 }

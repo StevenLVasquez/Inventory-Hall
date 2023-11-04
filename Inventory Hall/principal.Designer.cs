@@ -51,7 +51,7 @@
             btncerrar.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btncerrar.Image = Properties.Resources._330399_bad_cancel_clear_close_decline_icon;
             btncerrar.ImageAlign = ContentAlignment.TopCenter;
-            btncerrar.Location = new Point(708, 27);
+            btncerrar.Location = new Point(708, 46);
             btncerrar.Name = "btncerrar";
             btncerrar.Size = new Size(80, 74);
             btncerrar.TabIndex = 0;
@@ -62,11 +62,12 @@
             // 
             // menuStrip1
             // 
-            menuStrip1.BackColor = Color.FromArgb(0, 192, 192);
+            menuStrip1.BackColor = Color.Gray;
+            menuStrip1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             menuStrip1.Items.AddRange(new ToolStripItem[] { eNTRADAToolStripMenuItem, pROCESOToolStripMenuItem, cONSULTAToolStripMenuItem, sISTEMAToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 24);
+            menuStrip1.Size = new Size(800, 29);
             menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -74,27 +75,27 @@
             // 
             eNTRADAToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { pRODUCTOToolStripMenuItem, eMPLEADOToolStripMenuItem, sUPLIDORToolStripMenuItem });
             eNTRADAToolStripMenuItem.Name = "eNTRADAToolStripMenuItem";
-            eNTRADAToolStripMenuItem.Size = new Size(71, 20);
+            eNTRADAToolStripMenuItem.Size = new Size(91, 25);
             eNTRADAToolStripMenuItem.Text = "ENTRADA";
             // 
             // pRODUCTOToolStripMenuItem
             // 
             pRODUCTOToolStripMenuItem.Name = "pRODUCTOToolStripMenuItem";
-            pRODUCTOToolStripMenuItem.Size = new Size(138, 22);
+            pRODUCTOToolStripMenuItem.Size = new Size(166, 26);
             pRODUCTOToolStripMenuItem.Text = "PRODUCTO ";
             pRODUCTOToolStripMenuItem.Click += pRODUCTOToolStripMenuItem_Click;
             // 
             // eMPLEADOToolStripMenuItem
             // 
             eMPLEADOToolStripMenuItem.Name = "eMPLEADOToolStripMenuItem";
-            eMPLEADOToolStripMenuItem.Size = new Size(138, 22);
+            eMPLEADOToolStripMenuItem.Size = new Size(166, 26);
             eMPLEADOToolStripMenuItem.Text = "EMPLEADO";
             eMPLEADOToolStripMenuItem.Click += eMPLEADOToolStripMenuItem_Click;
             // 
             // sUPLIDORToolStripMenuItem
             // 
             sUPLIDORToolStripMenuItem.Name = "sUPLIDORToolStripMenuItem";
-            sUPLIDORToolStripMenuItem.Size = new Size(138, 22);
+            sUPLIDORToolStripMenuItem.Size = new Size(166, 26);
             sUPLIDORToolStripMenuItem.Text = "SUPLIDOR";
             sUPLIDORToolStripMenuItem.Click += sUPLIDORToolStripMenuItem_Click;
             // 
@@ -102,13 +103,13 @@
             // 
             pROCESOToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { dISTRIBUCIONDECATEGORIAToolStripMenuItem });
             pROCESOToolStripMenuItem.Name = "pROCESOToolStripMenuItem";
-            pROCESOToolStripMenuItem.Size = new Size(71, 20);
+            pROCESOToolStripMenuItem.Size = new Size(92, 25);
             pROCESOToolStripMenuItem.Text = "PROCESO";
             // 
             // dISTRIBUCIONDECATEGORIAToolStripMenuItem
             // 
             dISTRIBUCIONDECATEGORIAToolStripMenuItem.Name = "dISTRIBUCIONDECATEGORIAToolStripMenuItem";
-            dISTRIBUCIONDECATEGORIAToolStripMenuItem.Size = new Size(236, 22);
+            dISTRIBUCIONDECATEGORIAToolStripMenuItem.Size = new Size(297, 26);
             dISTRIBUCIONDECATEGORIAToolStripMenuItem.Text = "DISTRIBUCION DE CATEGORIA ";
             dISTRIBUCIONDECATEGORIAToolStripMenuItem.Click += dISTRIBUCIONDECATEGORIAToolStripMenuItem_Click;
             // 
@@ -116,28 +117,28 @@
             // 
             cONSULTAToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { pRODUCTOToolStripMenuItem1, eMPLEADOToolStripMenuItem1, sUPLIDORToolStripMenuItem1 });
             cONSULTAToolStripMenuItem.Name = "cONSULTAToolStripMenuItem";
-            cONSULTAToolStripMenuItem.Size = new Size(77, 20);
+            cONSULTAToolStripMenuItem.Size = new Size(100, 25);
             cONSULTAToolStripMenuItem.Text = "CONSULTA";
             cONSULTAToolStripMenuItem.Click += cONSULTAToolStripMenuItem_Click;
             // 
             // pRODUCTOToolStripMenuItem1
             // 
             pRODUCTOToolStripMenuItem1.Name = "pRODUCTOToolStripMenuItem1";
-            pRODUCTOToolStripMenuItem1.Size = new Size(138, 22);
+            pRODUCTOToolStripMenuItem1.Size = new Size(164, 26);
             pRODUCTOToolStripMenuItem1.Text = "PRODUCTO";
             pRODUCTOToolStripMenuItem1.Click += pRODUCTOToolStripMenuItem1_Click;
             // 
             // eMPLEADOToolStripMenuItem1
             // 
             eMPLEADOToolStripMenuItem1.Name = "eMPLEADOToolStripMenuItem1";
-            eMPLEADOToolStripMenuItem1.Size = new Size(138, 22);
+            eMPLEADOToolStripMenuItem1.Size = new Size(164, 26);
             eMPLEADOToolStripMenuItem1.Text = "EMPLEADO ";
             eMPLEADOToolStripMenuItem1.Click += eMPLEADOToolStripMenuItem1_Click;
             // 
             // sUPLIDORToolStripMenuItem1
             // 
             sUPLIDORToolStripMenuItem1.Name = "sUPLIDORToolStripMenuItem1";
-            sUPLIDORToolStripMenuItem1.Size = new Size(138, 22);
+            sUPLIDORToolStripMenuItem1.Size = new Size(164, 26);
             sUPLIDORToolStripMenuItem1.Text = "SUPLIDOR ";
             sUPLIDORToolStripMenuItem1.Click += sUPLIDORToolStripMenuItem1_Click;
             // 
@@ -145,13 +146,13 @@
             // 
             sISTEMAToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { aCERCADEToolStripMenuItem });
             sISTEMAToolStripMenuItem.Name = "sISTEMAToolStripMenuItem";
-            sISTEMAToolStripMenuItem.Size = new Size(68, 20);
+            sISTEMAToolStripMenuItem.Size = new Size(88, 25);
             sISTEMAToolStripMenuItem.Text = "SISTEMA ";
             // 
             // aCERCADEToolStripMenuItem
             // 
             aCERCADEToolStripMenuItem.Name = "aCERCADEToolStripMenuItem";
-            aCERCADEToolStripMenuItem.Size = new Size(139, 22);
+            aCERCADEToolStripMenuItem.Size = new Size(165, 26);
             aCERCADEToolStripMenuItem.Text = "ACERCA DE ";
             aCERCADEToolStripMenuItem.Click += aCERCADEToolStripMenuItem_Click;
             // 

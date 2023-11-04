@@ -100,6 +100,8 @@ namespace Inventory_Hall
             PopulateCategoriaComboBox();
             PopulateSuplidorComboBox();
 
+
+
         }
 
         private void guardarbtn_Click(object sender, EventArgs e)
@@ -166,6 +168,9 @@ namespace Inventory_Hall
 
         }
 
+        private void agrproducto_Load_1(object sender, EventArgs e)
+        {
 
+        }
     }
 }

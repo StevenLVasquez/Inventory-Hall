@@ -114,7 +114,7 @@
             insertarbtn.Name = "insertarbtn";
             insertarbtn.Size = new Size(75, 23);
             insertarbtn.TabIndex = 6;
-            insertarbtn.Text = "Insertar";
+            insertarbtn.Text = "Nuevo";
             insertarbtn.UseVisualStyleBackColor = false;
             insertarbtn.Click += insertarbtn_Click;
             // 
@@ -220,6 +220,7 @@
             Name = "agrproducto";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Entrada de Producto";
+            Load += agrproducto_Load_1;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -69,5 +69,15 @@ namespace Inventory_Hall.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fotodeinventoryhall {
+            get {
+                object obj = ResourceManager.GetObject("fotodeinventoryhall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

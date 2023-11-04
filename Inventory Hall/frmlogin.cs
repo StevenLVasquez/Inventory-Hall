@@ -10,20 +10,22 @@ using System.Windows.Forms;
 
 namespace Inventory_Hall
 {
-    public partial class agrempleado : Form
+    public partial class frmlogin : Form
     {
-        public agrempleado()
+        public frmlogin()
         {
             InitializeComponent();
         }
 
-        private void nuevobtn_Click(object sender, EventArgs e)
+        private void cancelarbtn_Click(object sender, EventArgs e)
         {
-            nombretxt.Enabled = true;
-
-            nombretxt.BackColor = Color.White;
-
-
+            this.Dispose();
         }
+
+        private void loginbtn_Click(object sender, EventArgs e)
+        {
+        }
+
+
     }
 }

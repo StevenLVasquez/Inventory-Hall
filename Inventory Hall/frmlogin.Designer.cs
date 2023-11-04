@@ -81,6 +81,7 @@
             // 
             maskedcon.Location = new Point(49, 237);
             maskedcon.Name = "maskedcon";
+            maskedcon.PasswordChar = '*';
             maskedcon.Size = new Size(250, 23);
             maskedcon.TabIndex = 5;
             // 
@@ -107,6 +108,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ControlLight;
             ClientSize = new Size(800, 450);
             ControlBox = false;
             Controls.Add(pictureBox1);
@@ -119,6 +121,7 @@
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "frmlogin";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "CONTROL DE ACCESO";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);

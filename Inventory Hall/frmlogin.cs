@@ -24,6 +24,29 @@ namespace Inventory_Hall
 
         private void loginbtn_Click(object sender, EventArgs e)
         {
+            if (usuariotxt.Text == "steven" && maskedcon.Text == "0785")
+            {
+                principal principal = new principal();
+                principal.Show();
+                MessageBox.Show("Bienvenido al sistema ");
+                
+            }
+            
+                  else
+                {
+                    if (usuariotxt.Text != "steven" && maskedcon.Text != "0785")
+                    {
+                        MessageBox.Show("El usuario y la contraseña son incorrectas");
+                    }
+                    else if (usuariotxt.Text != "steven")
+                    {
+                        MessageBox.Show("El usuario es incorrecto");
+                    }
+                    else if (maskedcon.Text != "0785")
+                    {
+                        MessageBox.Show("La contraseña es incorrecta");
+                    }
+                }
         }
 
 

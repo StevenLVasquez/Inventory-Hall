@@ -26,10 +26,9 @@ namespace Inventory_Hall
         {
             if (usuariotxt.Text == "steven" && maskedcon.Text == "0785")
             {
-                principal principal = new principal();
-                principal.Show();
-                MessageBox.Show("Bienvenido al sistema ");
-                
+                DialogResult = DialogResult.OK; // Set the DialogResult to OK
+                Close(); // Close the login form
+
             }
             
                   else

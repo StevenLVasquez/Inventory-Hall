@@ -43,6 +43,8 @@
             secciontxt = new TextBox();
             categoriabox = new ComboBox();
             idsuplidortxt = new ComboBox();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // LBnombre
@@ -195,11 +197,22 @@
             idsuplidortxt.TabIndex = 12;
             idsuplidortxt.SelectedIndexChanged += idsuplidortxt_SelectedIndexChanged;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.foto_de_entrada_producto;
+            pictureBox1.Location = new Point(599, 116);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(180, 177);
+            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox1.TabIndex = 14;
+            pictureBox1.TabStop = false;
+            // 
             // agrproducto
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox1);
             Controls.Add(idsuplidortxt);
             Controls.Add(categoriabox);
             Controls.Add(secciontxt);
@@ -221,6 +234,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Entrada de Producto";
             Load += agrproducto_Load_1;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -241,5 +255,6 @@
         private TextBox secciontxt;
         private ComboBox categoriabox;
         private ComboBox idsuplidortxt;
+        private PictureBox pictureBox1;
     }
 }

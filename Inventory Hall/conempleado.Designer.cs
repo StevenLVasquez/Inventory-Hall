@@ -40,17 +40,18 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
             dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(776, 329);
+            dataGridView1.Size = new Size(988, 329);
             dataGridView1.TabIndex = 0;
             // 
             // conempleado
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1012, 450);
             Controls.Add(dataGridView1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "conempleado";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Consulta Empleado";
             Load += conempleado_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,31 @@ namespace Inventory_Hall
 {
     public partial class conempleado : Form
     {
+        private DatabaseManager databaseManager;
         public conempleado()
         {
             InitializeComponent();
+            databaseManager = new DatabaseManager();
+
+        }
+
+        private void conempleado_Load(object sender, EventArgs e)
+        {
+            string query = "SELECT * FROM empleado";
+
+            using (DataTable dataTable = new DataTable())
+            {
+                using (var adapter = new SqlDataAdapter(query, databaseManager.GetConnection()))
+                {
+                    adapter.Fill(dataTable);
+
+                    // Bind the DataTable to the DataGridView
+                    dataGridView1.DataSource = dataTable;
+                }
+            }
+
+            // Close the connection when done
+            databaseManager.CloseConnection();
         }
     }
 }

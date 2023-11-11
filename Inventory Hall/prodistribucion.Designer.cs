@@ -34,6 +34,7 @@
             textBoxNewSeccion = new TextBox();
             idproductoLB = new Label();
             nuevaseccionLB = new Label();
+            distribuciondecategoriaLB = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -42,7 +43,7 @@
             dataGridView1.BackgroundColor = SystemColors.ActiveCaption;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.GridColor = SystemColors.WindowText;
-            dataGridView1.Location = new Point(24, 12);
+            dataGridView1.Location = new Point(21, 64);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
             dataGridView1.RowTemplate.Height = 25;
@@ -51,8 +52,9 @@
             // 
             // comboBoxProductIDs
             // 
+            comboBoxProductIDs.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxProductIDs.FormattingEnabled = true;
-            comboBoxProductIDs.Location = new Point(113, 339);
+            comboBoxProductIDs.Location = new Point(110, 391);
             comboBoxProductIDs.Name = "comboBoxProductIDs";
             comboBoxProductIDs.Size = new Size(121, 23);
             comboBoxProductIDs.TabIndex = 1;
@@ -60,7 +62,7 @@
             // buttonseccionupdate
             // 
             buttonseccionupdate.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            buttonseccionupdate.Location = new Point(462, 337);
+            buttonseccionupdate.Location = new Point(459, 389);
             buttonseccionupdate.Name = "buttonseccionupdate";
             buttonseccionupdate.Size = new Size(98, 35);
             buttonseccionupdate.TabIndex = 2;
@@ -70,7 +72,7 @@
             // 
             // textBoxNewSeccion
             // 
-            textBoxNewSeccion.Location = new Point(272, 339);
+            textBoxNewSeccion.Location = new Point(269, 391);
             textBoxNewSeccion.Name = "textBoxNewSeccion";
             textBoxNewSeccion.Size = new Size(109, 23);
             textBoxNewSeccion.TabIndex = 3;
@@ -79,7 +81,7 @@
             // 
             idproductoLB.AutoSize = true;
             idproductoLB.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            idproductoLB.Location = new Point(113, 310);
+            idproductoLB.Location = new Point(110, 362);
             idproductoLB.Name = "idproductoLB";
             idproductoLB.Size = new Size(97, 17);
             idproductoLB.TabIndex = 4;
@@ -89,17 +91,28 @@
             // 
             nuevaseccionLB.AutoSize = true;
             nuevaseccionLB.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            nuevaseccionLB.Location = new Point(272, 310);
+            nuevaseccionLB.Location = new Point(269, 362);
             nuevaseccionLB.Name = "nuevaseccionLB";
             nuevaseccionLB.Size = new Size(109, 17);
             nuevaseccionLB.TabIndex = 5;
             nuevaseccionLB.Text = "NUEVA SECCION";
+            // 
+            // distribuciondecategoriaLB
+            // 
+            distribuciondecategoriaLB.AutoSize = true;
+            distribuciondecategoriaLB.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            distribuciondecategoriaLB.Location = new Point(269, 21);
+            distribuciondecategoriaLB.Name = "distribuciondecategoriaLB";
+            distribuciondecategoriaLB.Size = new Size(238, 21);
+            distribuciondecategoriaLB.TabIndex = 6;
+            distribuciondecategoriaLB.Text = "DISTRIBUCION DE CATEGORIA";
             // 
             // prodistribucion
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(distribuciondecategoriaLB);
             Controls.Add(nuevaseccionLB);
             Controls.Add(idproductoLB);
             Controls.Add(textBoxNewSeccion);
@@ -122,5 +135,6 @@
         private TextBox textBoxNewSeccion;
         private Label idproductoLB;
         private Label nuevaseccionLB;
+        private Label distribuciondecategoriaLB;
     }
 }

@@ -43,13 +43,14 @@
             guardarbtn = new Button();
             telefonotxt = new MaskedTextBox();
             rnctxt = new MaskedTextBox();
+            entradadesuplidorLB = new Label();
             SuspendLayout();
             // 
             // nombreLB
             // 
             nombreLB.AutoSize = true;
             nombreLB.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            nombreLB.Location = new Point(49, 58);
+            nombreLB.Location = new Point(14, 127);
             nombreLB.Name = "nombreLB";
             nombreLB.Size = new Size(58, 17);
             nombreLB.TabIndex = 0;
@@ -59,7 +60,7 @@
             // 
             rncLB.AutoSize = true;
             rncLB.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            rncLB.Location = new Point(49, 105);
+            rncLB.Location = new Point(38, 171);
             rncLB.Name = "rncLB";
             rncLB.Size = new Size(34, 17);
             rncLB.TabIndex = 1;
@@ -69,7 +70,7 @@
             // 
             direccionLB.AutoSize = true;
             direccionLB.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            direccionLB.Location = new Point(49, 160);
+            direccionLB.Location = new Point(6, 229);
             direccionLB.Name = "direccionLB";
             direccionLB.Size = new Size(66, 17);
             direccionLB.TabIndex = 2;
@@ -79,7 +80,7 @@
             // 
             emailLB.AutoSize = true;
             emailLB.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            emailLB.Location = new Point(49, 211);
+            emailLB.Location = new Point(414, 122);
             emailLB.Name = "emailLB";
             emailLB.Size = new Size(42, 17);
             emailLB.TabIndex = 3;
@@ -89,7 +90,7 @@
             // 
             telefonoLB.AutoSize = true;
             telefonoLB.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            telefonoLB.Location = new Point(49, 260);
+            telefonoLB.Location = new Point(394, 174);
             telefonoLB.Name = "telefonoLB";
             telefonoLB.Size = new Size(62, 17);
             telefonoLB.TabIndex = 4;
@@ -99,7 +100,7 @@
             // 
             descripcionLB.AutoSize = true;
             descripcionLB.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            descripcionLB.Location = new Point(49, 312);
+            descripcionLB.Location = new Point(376, 223);
             descripcionLB.Name = "descripcionLB";
             descripcionLB.Size = new Size(80, 17);
             descripcionLB.TabIndex = 5;
@@ -109,43 +110,43 @@
             // 
             nombretxt.BackColor = SystemColors.ScrollBar;
             nombretxt.Enabled = false;
-            nombretxt.Location = new Point(137, 52);
+            nombretxt.Location = new Point(94, 121);
             nombretxt.Name = "nombretxt";
-            nombretxt.Size = new Size(395, 23);
+            nombretxt.Size = new Size(252, 23);
             nombretxt.TabIndex = 6;
             // 
             // direcciontxt
             // 
             direcciontxt.BackColor = SystemColors.ScrollBar;
             direcciontxt.Enabled = false;
-            direcciontxt.Location = new Point(137, 154);
+            direcciontxt.Location = new Point(94, 223);
             direcciontxt.Name = "direcciontxt";
-            direcciontxt.Size = new Size(395, 23);
+            direcciontxt.Size = new Size(252, 23);
             direcciontxt.TabIndex = 8;
             // 
             // emailtxt
             // 
             emailtxt.BackColor = SystemColors.ScrollBar;
             emailtxt.Enabled = false;
-            emailtxt.Location = new Point(137, 205);
+            emailtxt.Location = new Point(482, 116);
             emailtxt.Name = "emailtxt";
-            emailtxt.Size = new Size(395, 23);
+            emailtxt.Size = new Size(294, 23);
             emailtxt.TabIndex = 9;
             // 
             // descripciontxt
             // 
             descripciontxt.BackColor = SystemColors.ScrollBar;
             descripciontxt.Enabled = false;
-            descripciontxt.Location = new Point(137, 306);
+            descripciontxt.Location = new Point(482, 217);
             descripciontxt.Name = "descripciontxt";
-            descripciontxt.Size = new Size(395, 23);
+            descripciontxt.Size = new Size(294, 23);
             descripciontxt.TabIndex = 11;
             // 
             // insertarbtn
             // 
             insertarbtn.BackColor = SystemColors.ActiveCaption;
             insertarbtn.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            insertarbtn.Location = new Point(137, 384);
+            insertarbtn.Location = new Point(271, 384);
             insertarbtn.Name = "insertarbtn";
             insertarbtn.Size = new Size(75, 23);
             insertarbtn.TabIndex = 12;
@@ -157,7 +158,7 @@
             // 
             guardarbtn.BackColor = SystemColors.ActiveCaption;
             guardarbtn.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            guardarbtn.Location = new Point(457, 384);
+            guardarbtn.Location = new Point(429, 384);
             guardarbtn.Name = "guardarbtn";
             guardarbtn.Size = new Size(75, 23);
             guardarbtn.TabIndex = 13;
@@ -169,7 +170,7 @@
             // 
             telefonotxt.BackColor = SystemColors.ScrollBar;
             telefonotxt.Enabled = false;
-            telefonotxt.Location = new Point(137, 254);
+            telefonotxt.Location = new Point(482, 165);
             telefonotxt.Mask = "(999) 000-0000";
             telefonotxt.Name = "telefonotxt";
             telefonotxt.Size = new Size(89, 23);
@@ -180,18 +181,29 @@
             // 
             rnctxt.BackColor = SystemColors.ScrollBar;
             rnctxt.Enabled = false;
-            rnctxt.Location = new Point(137, 104);
+            rnctxt.Location = new Point(94, 173);
             rnctxt.Mask = "0-0000000-0";
             rnctxt.Name = "rnctxt";
-            rnctxt.Size = new Size(89, 23);
+            rnctxt.Size = new Size(75, 23);
             rnctxt.TabIndex = 7;
             rnctxt.MaskInputRejected += rnctxt_MaskInputRejected;
+            // 
+            // entradadesuplidorLB
+            // 
+            entradadesuplidorLB.AutoSize = true;
+            entradadesuplidorLB.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            entradadesuplidorLB.Location = new Point(310, 44);
+            entradadesuplidorLB.Name = "entradadesuplidorLB";
+            entradadesuplidorLB.Size = new Size(192, 21);
+            entradadesuplidorLB.TabIndex = 14;
+            entradadesuplidorLB.Text = "ENTRADA DE SUPLIDOR";
             // 
             // agrsuplidor
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(entradadesuplidorLB);
             Controls.Add(rnctxt);
             Controls.Add(telefonotxt);
             Controls.Add(guardarbtn);
@@ -230,5 +242,6 @@
         private Button guardarbtn;
         private MaskedTextBox telefonotxt;
         private MaskedTextBox rnctxt;
+        private Label entradadesuplidorLB;
     }
 }

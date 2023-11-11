@@ -48,6 +48,20 @@ namespace Inventory_Hall
         {
             try
             {
+                // Check if any of the required fields is empty
+                // Check if any of the required fields is empty
+                if (string.IsNullOrWhiteSpace(nombretxt.Text) ||
+                    string.IsNullOrWhiteSpace(GetUnmaskedText(rnctxt)) ||
+                    string.IsNullOrWhiteSpace(direcciontxt.Text) ||
+                    string.IsNullOrWhiteSpace(emailtxt.Text) ||
+                    string.IsNullOrWhiteSpace(GetUnmaskedText(telefonotxt)) ||
+                    string.IsNullOrWhiteSpace(descripciontxt.Text))
+                {
+                    MessageBox.Show("Por favor llenar todos los campos.");
+                    return; // Exit the method without proceeding to database insertion
+                }
+
+
                 string insertQuery = "insert into suplidor (nombre, rnc, direccion, email, telefono, descripcion) " +
                     "VALUES (@nombre, @rnc, @direccion, @email, @telefono, @descripcion)";
 
@@ -95,5 +109,16 @@ namespace Inventory_Hall
         {
 
         }
+
+        private string GetUnmaskedText(MaskedTextBox maskedTextBox)
+        {
+            string unmaskedText = maskedTextBox.Text;
+            foreach (char maskChar in maskedTextBox.Mask)
+            {
+                unmaskedText = unmaskedText.Replace(maskChar.ToString(), "");
+            }
+            return unmaskedText;
+        }
+
     }
 }

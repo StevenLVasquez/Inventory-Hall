@@ -39,11 +39,11 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(21, 12);
+            dataGridView1.Location = new Point(30, 61);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
             dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(755, 352);
+            dataGridView1.Size = new Size(758, 287);
             dataGridView1.TabIndex = 0;
             // 
             // txtID

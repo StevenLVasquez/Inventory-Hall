@@ -46,20 +46,29 @@ namespace Inventory_Hall
                 string selectedProductID = comboBoxProductIDs.SelectedItem.ToString();
                 string newSeccionValue = textBoxNewSeccion.Text;
 
-                // Update the "seccion" column in the "producto" table
-                string updateQuery = "UPDATE producto SET seccion = @newSeccion WHERE id = @productID";
-                using (SqlCommand command = new SqlCommand(updateQuery, connection))
+                // Check if the new section value is empty
+                if (string.IsNullOrWhiteSpace(newSeccionValue))
                 {
-                    command.Parameters.AddWithValue("@newSeccion", newSeccionValue);
-                    command.Parameters.AddWithValue("@productID", selectedProductID);
-
-                    command.ExecuteNonQuery();
+                    MessageBox.Show("Favor elegir una seccion.");
                 }
+                else
+                {
 
-                MessageBox.Show("Seccion Actualizada Con Exito.");
+                    // Update the "seccion" column in the "producto" table
+                    string updateQuery = "UPDATE producto SET seccion = @newSeccion WHERE id = @productID";
+                    using (SqlCommand command = new SqlCommand(updateQuery, connection))
+                    {
+                        command.Parameters.AddWithValue("@newSeccion", newSeccionValue);
+                        command.Parameters.AddWithValue("@productID", selectedProductID);
 
-                // Refresh the DataGridView to display updated data
-                RefreshDataGridView();
+                        command.ExecuteNonQuery();
+                    }
+
+                    MessageBox.Show("Seccion Actualizada Con Exito.");
+
+                    // Refresh the DataGridView to display updated data
+                    RefreshDataGridView();
+                }
             }
             else
             {

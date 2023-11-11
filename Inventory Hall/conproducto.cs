@@ -78,24 +78,24 @@ namespace Inventory_Hall
         private void refreshbtn_Click(object sender, EventArgs e)
         {
 
-        
 
-                string query = "SELECT * FROM producto";
 
-                using (DataTable dataTable = new DataTable())
+            string query = "SELECT * FROM producto";
+
+            using (DataTable dataTable = new DataTable())
+            {
+                using (var adapter = new SqlDataAdapter(query, databaseManager.GetConnection()))
                 {
-                    using (var adapter = new SqlDataAdapter(query, databaseManager.GetConnection()))
-                    {
-                        adapter.Fill(dataTable);
+                    adapter.Fill(dataTable);
 
-                        // Bind the DataTable to the DataGridView
-                        dataGridView1.DataSource = dataTable;
-                    }
+                    // Bind the DataTable to the DataGridView
+                    dataGridView1.DataSource = dataTable;
                 }
+            }
 
-                // Close the connection when done
-                databaseManager.CloseConnection();
-            
+            // Close the connection when done
+            databaseManager.CloseConnection();
+
         }
     }
 }

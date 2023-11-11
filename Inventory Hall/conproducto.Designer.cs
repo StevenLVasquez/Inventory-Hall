@@ -48,14 +48,15 @@
             // 
             // txtID
             // 
-            txtID.Location = new Point(147, 400);
+            txtID.Location = new Point(200, 399);
             txtID.Name = "txtID";
             txtID.Size = new Size(100, 23);
             txtID.TabIndex = 1;
             // 
             // buscarbtn
             // 
-            buscarbtn.Location = new Point(313, 405);
+            buscarbtn.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            buscarbtn.Location = new Point(372, 399);
             buscarbtn.Name = "buscarbtn";
             buscarbtn.Size = new Size(75, 23);
             buscarbtn.TabIndex = 2;
@@ -65,7 +66,8 @@
             // 
             // refreshbtn
             // 
-            refreshbtn.Location = new Point(463, 408);
+            refreshbtn.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            refreshbtn.Location = new Point(488, 400);
             refreshbtn.Name = "refreshbtn";
             refreshbtn.Size = new Size(75, 23);
             refreshbtn.TabIndex = 3;

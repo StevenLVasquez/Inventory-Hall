@@ -47,98 +47,108 @@
             maskedtel = new MaskedTextBox();
             maskedcel = new MaskedTextBox();
             guardarbtn = new Button();
+            entreadoempleadoLB = new Label();
             SuspendLayout();
             // 
             // nombretxt
             // 
             nombretxt.BackColor = SystemColors.ScrollBar;
             nombretxt.Enabled = false;
-            nombretxt.Location = new Point(174, 27);
+            nombretxt.Location = new Point(139, 138);
             nombretxt.Name = "nombretxt";
-            nombretxt.Size = new Size(100, 23);
+            nombretxt.Size = new Size(204, 23);
             nombretxt.TabIndex = 10;
             nombretxt.TextChanged += nombretxt_TextChanged;
             // 
             // nuevobtn
             // 
+            nuevobtn.BackColor = SystemColors.ActiveCaption;
             nuevobtn.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            nuevobtn.Location = new Point(384, 359);
+            nuevobtn.Location = new Point(273, 403);
             nuevobtn.Name = "nuevobtn";
-            nuevobtn.Size = new Size(75, 23);
+            nuevobtn.Size = new Size(85, 23);
             nuevobtn.TabIndex = 18;
             nuevobtn.Text = "Nuevo";
-            nuevobtn.UseVisualStyleBackColor = true;
+            nuevobtn.UseVisualStyleBackColor = false;
             nuevobtn.Click += nuevobtn_Click;
             // 
             // nombreLB
             // 
             nombreLB.AutoSize = true;
-            nombreLB.Location = new Point(62, 35);
+            nombreLB.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            nombreLB.Location = new Point(66, 146);
             nombreLB.Name = "nombreLB";
-            nombreLB.Size = new Size(51, 15);
+            nombreLB.Size = new Size(58, 17);
             nombreLB.TabIndex = 2;
             nombreLB.Text = "Nombre";
             // 
             // apellidoLB
             // 
             apellidoLB.AutoSize = true;
-            apellidoLB.Location = new Point(62, 85);
+            apellidoLB.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            apellidoLB.Location = new Point(66, 196);
             apellidoLB.Name = "apellidoLB";
-            apellidoLB.Size = new Size(51, 15);
+            apellidoLB.Size = new Size(60, 17);
             apellidoLB.TabIndex = 3;
             apellidoLB.Text = "Apellido";
             // 
             // direccionLB
             // 
             direccionLB.AutoSize = true;
-            direccionLB.Location = new Point(62, 129);
+            direccionLB.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            direccionLB.Location = new Point(66, 240);
             direccionLB.Name = "direccionLB";
-            direccionLB.Size = new Size(57, 15);
+            direccionLB.Size = new Size(66, 17);
             direccionLB.TabIndex = 4;
             direccionLB.Text = "Direccion";
             // 
             // dniLB
             // 
             dniLB.AutoSize = true;
-            dniLB.Location = new Point(62, 178);
+            dniLB.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            dniLB.Location = new Point(66, 289);
             dniLB.Name = "dniLB";
-            dniLB.Size = new Size(27, 15);
+            dniLB.Size = new Size(32, 17);
             dniLB.TabIndex = 5;
             dniLB.Text = "DNI";
             // 
             // emailLB
             // 
             emailLB.AutoSize = true;
-            emailLB.Location = new Point(62, 225);
+            emailLB.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            emailLB.Location = new Point(381, 146);
             emailLB.Name = "emailLB";
-            emailLB.Size = new Size(36, 15);
+            emailLB.Size = new Size(42, 17);
             emailLB.TabIndex = 6;
             emailLB.Text = "Email";
             // 
             // telefonoLB
             // 
             telefonoLB.AutoSize = true;
-            telefonoLB.Location = new Point(62, 268);
+            telefonoLB.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            telefonoLB.Location = new Point(381, 191);
             telefonoLB.Name = "telefonoLB";
-            telefonoLB.Size = new Size(52, 15);
+            telefonoLB.Size = new Size(62, 17);
             telefonoLB.TabIndex = 7;
             telefonoLB.Text = "Telefono";
             // 
             // celularLB
             // 
             celularLB.AutoSize = true;
-            celularLB.Location = new Point(62, 319);
+            celularLB.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            celularLB.Location = new Point(381, 242);
             celularLB.Name = "celularLB";
-            celularLB.Size = new Size(44, 15);
+            celularLB.Size = new Size(51, 17);
             celularLB.TabIndex = 8;
             celularLB.Text = "Celular";
             // 
             // cargoLB
             // 
             cargoLB.AutoSize = true;
-            cargoLB.Location = new Point(62, 367);
+            cargoLB.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            cargoLB.Location = new Point(381, 287);
             cargoLB.Name = "cargoLB";
-            cargoLB.Size = new Size(39, 15);
+            cargoLB.Size = new Size(44, 17);
             cargoLB.TabIndex = 9;
             cargoLB.Text = "Cargo";
             // 
@@ -146,53 +156,53 @@
             // 
             apellidotxt.BackColor = SystemColors.ScrollBar;
             apellidotxt.Enabled = false;
-            apellidotxt.Location = new Point(174, 77);
+            apellidotxt.Location = new Point(139, 188);
             apellidotxt.Name = "apellidotxt";
-            apellidotxt.Size = new Size(100, 23);
+            apellidotxt.Size = new Size(204, 23);
             apellidotxt.TabIndex = 11;
             // 
             // direcciontxt
             // 
             direcciontxt.BackColor = SystemColors.ScrollBar;
             direcciontxt.Enabled = false;
-            direcciontxt.Location = new Point(174, 121);
+            direcciontxt.Location = new Point(139, 232);
             direcciontxt.Name = "direcciontxt";
-            direcciontxt.Size = new Size(100, 23);
+            direcciontxt.Size = new Size(204, 23);
             direcciontxt.TabIndex = 12;
             // 
             // emailtxt
             // 
             emailtxt.BackColor = SystemColors.ScrollBar;
             emailtxt.Enabled = false;
-            emailtxt.Location = new Point(174, 225);
+            emailtxt.Location = new Point(453, 140);
             emailtxt.Name = "emailtxt";
-            emailtxt.Size = new Size(100, 23);
+            emailtxt.Size = new Size(204, 23);
             emailtxt.TabIndex = 14;
             // 
             // cargotxt
             // 
             cargotxt.BackColor = SystemColors.ScrollBar;
             cargotxt.Enabled = false;
-            cargotxt.Location = new Point(174, 359);
+            cargotxt.Location = new Point(453, 281);
             cargotxt.Name = "cargotxt";
-            cargotxt.Size = new Size(100, 23);
+            cargotxt.Size = new Size(190, 23);
             cargotxt.TabIndex = 17;
             // 
             // maskeddni
             // 
             maskeddni.BackColor = SystemColors.ScrollBar;
             maskeddni.Enabled = false;
-            maskeddni.Location = new Point(174, 170);
+            maskeddni.Location = new Point(139, 281);
             maskeddni.Mask = "000-0000000-0";
             maskeddni.Name = "maskeddni";
-            maskeddni.Size = new Size(100, 23);
+            maskeddni.Size = new Size(80, 23);
             maskeddni.TabIndex = 13;
             // 
             // maskedtel
             // 
             maskedtel.BackColor = SystemColors.ScrollBar;
             maskedtel.Enabled = false;
-            maskedtel.Location = new Point(174, 268);
+            maskedtel.Location = new Point(453, 185);
             maskedtel.Mask = "0-(999)-000-0000";
             maskedtel.Name = "maskedtel";
             maskedtel.Size = new Size(100, 23);
@@ -202,7 +212,7 @@
             // 
             maskedcel.BackColor = SystemColors.ScrollBar;
             maskedcel.Enabled = false;
-            maskedcel.Location = new Point(174, 311);
+            maskedcel.Location = new Point(453, 234);
             maskedcel.Mask = "(999)-000-0000";
             maskedcel.Name = "maskedcel";
             maskedcel.Size = new Size(100, 23);
@@ -210,20 +220,32 @@
             // 
             // guardarbtn
             // 
+            guardarbtn.BackColor = SystemColors.ActiveCaption;
             guardarbtn.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            guardarbtn.Location = new Point(510, 359);
+            guardarbtn.Location = new Point(404, 403);
             guardarbtn.Name = "guardarbtn";
-            guardarbtn.Size = new Size(75, 23);
+            guardarbtn.Size = new Size(78, 23);
             guardarbtn.TabIndex = 19;
             guardarbtn.Text = "Guardar";
-            guardarbtn.UseVisualStyleBackColor = true;
+            guardarbtn.UseVisualStyleBackColor = false;
             guardarbtn.Click += guardarbtn_Click;
+            // 
+            // entreadoempleadoLB
+            // 
+            entreadoempleadoLB.AutoSize = true;
+            entreadoempleadoLB.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            entreadoempleadoLB.Location = new Point(273, 60);
+            entreadoempleadoLB.Name = "entreadoempleadoLB";
+            entreadoempleadoLB.Size = new Size(209, 21);
+            entreadoempleadoLB.TabIndex = 20;
+            entreadoempleadoLB.Text = "ENTRADA DE EMPLEADOS";
             // 
             // agrempleado
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(entreadoempleadoLB);
             Controls.Add(guardarbtn);
             Controls.Add(maskedcel);
             Controls.Add(maskedtel);
@@ -269,5 +291,6 @@
         private MaskedTextBox maskedtel;
         private MaskedTextBox maskedcel;
         private Button guardarbtn;
+        private Label entreadoempleadoLB;
     }
 }

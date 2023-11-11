@@ -108,6 +108,25 @@ namespace Inventory_Hall
         {
             try
             {
+                // Check if any of the required fields are empty
+                if (string.IsNullOrWhiteSpace(nombretxt.Text) ||
+                    categoriabox.SelectedItem == null ||
+                    string.IsNullOrWhiteSpace(descripciontxt.Text) ||
+                    string.IsNullOrWhiteSpace(stocktxt.Text) ||
+                    idsuplidortxt.SelectedItem == null ||
+                    string.IsNullOrWhiteSpace(secciontxt.Text))
+                {
+                    MessageBox.Show("Favor completar el formulario. Todos los campos son obligatorios.");
+                    return; // Exit the method if any field is empty
+                }
+
+                // Check if the stock value is numeric
+                if (!int.TryParse(stocktxt.Text, out _))
+                {
+                    MessageBox.Show("Favor introduzca un dato numérico en el campo Stock.");
+                    return; // Exit the method if stock is not numeric
+                }
+
                 string insertQuery = "insert into producto (nombre, categoria, descripcion, stock, idsuplidor, seccion) " +
                     "VALUES (@nombre, @categoria, @descripcion, @stock, @idsuplidor, @seccion)";
 
@@ -136,35 +155,37 @@ namespace Inventory_Hall
 
                 MessageBox.Show("Data insertada correctamente.");
 
+                categoriabox.SelectedIndex = -1;
+                idsuplidortxt.SelectedIndex = -1;
+
                 nombretxt.Text = "";
                 categoriabox.Text = "";
                 descripciontxt.Text = "";
                 stocktxt.Text = "";
                 idsuplidortxt.Text = "";
                 secciontxt.Text = "";
-
             }
-
             catch (Exception ex)
             {
                 MessageBox.Show("ERROR: " + ex.Message);
-
             }
         }
+
 
 
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             // You can access the selected category from the ComboBox like this:
-            string selectedCategory = categoriabox.SelectedItem.ToString();
+            string selectedCategory = categoriabox.SelectedItem?.ToString();
 
             // Use the selected category as needed in your code
         }
 
+
         private void idsuplidortxt_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string selectedSuplidor = idsuplidortxt.SelectedItem.ToString();
+            string selectedSuplidor = idsuplidortxt.SelectedItem?.ToString();
 
         }
 

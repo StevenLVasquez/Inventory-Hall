@@ -30,22 +30,22 @@ namespace Inventory_Hall
                 Close(); // Close the login form
 
             }
-            
-                  else
+
+            else
+            {
+                if (usuariotxt.Text != "steven" && maskedcon.Text != "0785")
                 {
-                    if (usuariotxt.Text != "steven" && maskedcon.Text != "0785")
-                    {
-                        MessageBox.Show("El usuario y la contraseña son incorrectas");
-                    }
-                    else if (usuariotxt.Text != "steven")
-                    {
-                        MessageBox.Show("El usuario es incorrecto");
-                    }
-                    else if (maskedcon.Text != "0785")
-                    {
-                        MessageBox.Show("La contraseña es incorrecta");
-                    }
+                    MessageBox.Show("El usuario y la contraseña son incorrectas");
                 }
+                else if (usuariotxt.Text != "steven")
+                {
+                    MessageBox.Show("El usuario es incorrecto");
+                }
+                else if (maskedcon.Text != "0785")
+                {
+                    MessageBox.Show("La contraseña es incorrecta");
+                }
+            }
         }
 
 

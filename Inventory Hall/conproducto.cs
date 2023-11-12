@@ -7,18 +7,78 @@ namespace Inventory_Hall
 {
     public partial class conproducto : Form
     {
+        private const string InstructionalText = "Puedes presionar Enter para buscar";
+
         private DatabaseManager databaseManager;
 
         public conproducto()
         {
             InitializeComponent();
             databaseManager = new DatabaseManager();
+
+            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Bottom | AnchorStyles.Right;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            SetInstructionalText();
+
+
+            txtID.GotFocus += TxtID_GotFocus;
+            txtID.LostFocus += TxtID_LostFocus;
+            txtID.KeyPress += TxtID_KeyPress;
+
         }
+
+        private void SetInstructionalText()
+        {
+            if (string.IsNullOrWhiteSpace(txtID.Text))
+            {
+                txtID.Text = InstructionalText;
+                txtID.ForeColor = SystemColors.GrayText; // Change the text color to gray
+            }
+
+        }
+
+        private void ClearInstructionalText()
+        {
+            if (txtID.Text == InstructionalText)
+            {
+                txtID.Text = string.Empty;
+                txtID.ForeColor = SystemColors.WindowText; // Change the text color to the default
+            }
+        }
+        private void TxtID_GotFocus(object sender, EventArgs e)
+        {
+            ClearInstructionalText();
+        }
+
+        private void TxtID_LostFocus(object sender, EventArgs e)
+        {
+            SetInstructionalText();
+        }
+
+        //esta parte es un eventhandler para que al presionar enter se pueda hacer la busqueda sin necesidad de presionar el boton de busqueda 
+        private void TxtID_KeyPress(object sender, KeyPressEventArgs funcion)
+        {
+            // Check if the pressed key is Enter (ASCII value 13)
+            if (funcion.KeyChar == (char)Keys.Enter)
+            {
+                // Call the buscarbtn_Click event handler logic
+                buscarbtn_Click(sender, funcion);
+
+                // Suppress the key press to prevent the default behavior
+                funcion.Handled = true;
+            }
+        }
+
 
         private void conproducto_Load(object sender, EventArgs e)
         {
             // Assuming you have a table named "producto" in your database
             LoadData();
+
+            txtID.KeyPress += TxtID_KeyPress;
+
+
         }
 
         private void LoadData()

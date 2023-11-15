@@ -16,12 +16,13 @@ namespace Inventory_Hall
             InitializeComponent();
             databaseManager = new DatabaseManager();
 
+            //THIS IS SO THAT THE FORM ADJUST ITSELF WHEN SIZEING THE WINDOW
             dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Bottom | AnchorStyles.Right;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
             SetInstructionalText();
 
-
+            // THIS IS FOR THE TEXTBOX AND THE MASSAGE I WANTED TO DISPLAY BEFORE THE USER ENTERS SOMETINHG 
             txtID.GotFocus += TxtID_GotFocus;
             txtID.LostFocus += TxtID_LostFocus;
             txtID.KeyPress += TxtID_KeyPress;

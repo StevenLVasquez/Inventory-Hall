@@ -2,7 +2,7 @@
 using System;
 using System.Data;
 using System.Windows.Forms;
-
+//hola probando a ver si funciona el pull de github
 namespace Inventory_Hall
 {
     public partial class conproducto : Form

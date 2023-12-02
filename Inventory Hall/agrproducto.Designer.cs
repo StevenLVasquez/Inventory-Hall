@@ -45,7 +45,11 @@
             idsuplidortxt = new ComboBox();
             entradadeproductosLB = new Label();
             pictureBox1 = new PictureBox();
+            pictureBox4 = new PictureBox();
+            pictureBox5 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             SuspendLayout();
             // 
             // LBnombre
@@ -213,11 +217,29 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.cajasparafotoentradaproducto;
-            pictureBox1.Location = new Point(244, 256);
+            pictureBox1.Location = new Point(239, 256);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(372, 140);
             pictureBox1.TabIndex = 15;
             pictureBox1.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = Properties.Resources.foto_de_cajitas_48_pix;
+            pictureBox4.Location = new Point(12, 389);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(54, 49);
+            pictureBox4.TabIndex = 18;
+            pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Image = Properties.Resources.foto_de_cajitas_48_pix1;
+            pictureBox5.Location = new Point(734, 389);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(54, 49);
+            pictureBox5.TabIndex = 19;
+            pictureBox5.TabStop = false;
             // 
             // agrproducto
             // 
@@ -225,6 +247,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox5);
+            Controls.Add(pictureBox4);
             Controls.Add(pictureBox1);
             Controls.Add(entradadeproductosLB);
             Controls.Add(idsuplidortxt);
@@ -241,6 +265,7 @@
             Controls.Add(LBdescripcion);
             Controls.Add(LBcategoria);
             Controls.Add(LBnombre);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             MinimizeBox = false;
@@ -249,6 +274,8 @@
             Text = "Entrada de Producto";
             Load += agrproducto_Load_1;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -271,5 +298,7 @@
         private ComboBox idsuplidortxt;
         private Label entradadeproductosLB;
         private PictureBox pictureBox1;
+        private PictureBox pictureBox4;
+        private PictureBox pictureBox5;
     }
 }

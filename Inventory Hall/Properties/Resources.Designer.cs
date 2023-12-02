@@ -83,9 +83,79 @@ namespace Inventory_Hall.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap foto_de_agrempleado_48pix {
+            get {
+                object obj = ResourceManager.GetObject("foto de agrempleado 48pix", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap foto_de_agrempleado_48pix1 {
+            get {
+                object obj = ResourceManager.GetObject("foto de agrempleado 48pix1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap foto_de_agrempleado2_48pix {
+            get {
+                object obj = ResourceManager.GetObject("foto de agrempleado2 48pix", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap foto_de_cajitas_48_pix {
+            get {
+                object obj = ResourceManager.GetObject("foto de cajitas 48 pix", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap foto_de_cajitas_48_pix1 {
+            get {
+                object obj = ResourceManager.GetObject("foto de cajitas 48 pix1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap foto_de_entrada_producto {
             get {
                 object obj = ResourceManager.GetObject("foto de entrada producto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap foto_para_imagen_de_fono_del_inventory_hall_ {
+            get {
+                object obj = ResourceManager.GetObject("foto para imagen de fono del inventory hall ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap foto_para_poner_en_la_esquinita {
+            get {
+                object obj = ResourceManager.GetObject("foto para poner en la esquinita", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

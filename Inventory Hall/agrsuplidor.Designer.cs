@@ -202,7 +202,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(810, 478);
             Controls.Add(entradadesuplidorLB);
             Controls.Add(rnctxt);
             Controls.Add(telefonotxt);
@@ -218,7 +218,10 @@
             Controls.Add(direccionLB);
             Controls.Add(rncLB);
             Controls.Add(nombreLB);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "agrsuplidor";
             Text = "Entrada de Suplidor ";
             Load += agrsuplidor_Load;

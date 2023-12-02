@@ -77,8 +77,6 @@ namespace Inventory_Hall
             // Assuming you have a table named "producto" in your database
             LoadData();
 
-            txtID.KeyPress += TxtID_KeyPress;
-
 
         }
 

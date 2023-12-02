@@ -48,6 +48,12 @@
             maskedcel = new MaskedTextBox();
             guardarbtn = new Button();
             entreadoempleadoLB = new Label();
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            pictureBox3 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // nombretxt
@@ -240,11 +246,41 @@
             entreadoempleadoLB.TabIndex = 20;
             entreadoempleadoLB.Text = "ENTRADA DE EMPLEADOS";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImage = Properties.Resources.foto_de_agrempleado_48pix;
+            pictureBox1.Location = new Point(26, 382);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(48, 44);
+            pictureBox1.TabIndex = 21;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.BackgroundImage = Properties.Resources.foto_de_agrempleado_48pix1;
+            pictureBox2.Location = new Point(740, 382);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(48, 44);
+            pictureBox2.TabIndex = 22;
+            pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.BackgroundImage = Properties.Resources.foto_de_agrempleado2_48pix;
+            pictureBox3.Location = new Point(208, 41);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(46, 52);
+            pictureBox3.TabIndex = 23;
+            pictureBox3.TabStop = false;
+            // 
             // agrempleado
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox3);
+            Controls.Add(pictureBox2);
+            Controls.Add(pictureBox1);
             Controls.Add(entreadoempleadoLB);
             Controls.Add(guardarbtn);
             Controls.Add(maskedcel);
@@ -265,8 +301,13 @@
             Controls.Add(nuevobtn);
             Controls.Add(nombretxt);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "agrempleado";
             Text = "Entrada de Empleado";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -292,5 +333,8 @@
         private MaskedTextBox maskedcel;
         private Button guardarbtn;
         private Label entreadoempleadoLB;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox3;
     }
 }

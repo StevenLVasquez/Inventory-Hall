@@ -38,9 +38,9 @@ namespace Inventory_Hall
         //calling form (agr_empleado)
         private void eMPLEADOToolStripMenuItem_Click(object sender, EventArgs e)
         {
-                agrempleado agrempleado = new agrempleado();
-                agrempleado.ShowDialog();// here im using ( using ) bc its the right way 
-            
+            agrempleado agrempleado = new agrempleado();
+            agrempleado.ShowDialog();// here im using ( using ) bc its the right way 
+
         }
         //calling form ( agr_suplidor )
         private void sUPLIDORToolStripMenuItem_Click(object sender, EventArgs e)

@@ -23,7 +23,7 @@ namespace Inventory_Hall
             {
                 connection.Open();
             }
-
+            //haciendo algo 
             //TODO Populate the ComboBox with product IDs from the "producto" table
             string query = "SELECT id FROM producto";
             using (SqlCommand command = new SqlCommand(query, connection))

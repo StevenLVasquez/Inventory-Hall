@@ -1,7 +1,7 @@
 using System;
 using System.Windows.Forms;
 
-/*namespace Inventory_Hall
+namespace Inventory_Hall
 {
     static class Program
     {
@@ -20,9 +20,9 @@ using System.Windows.Forms;
             }
         }
     }
-}*/
+}
 
-namespace Inventory_Hall
+/*namespace Inventory_Hall
 {
     static class Program
     {
@@ -32,7 +32,7 @@ namespace Inventory_Hall
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new prodistribucion()); ;
+            Application.Run(new consuplidor()); ;
         }
     }
-}
+}*/

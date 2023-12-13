@@ -73,9 +73,39 @@ namespace Inventory_Hall.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _9043673_3d_mpr_toggle_icon {
+            get {
+                object obj = ResourceManager.GetObject("9043673_3d_mpr_toggle_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _9044388_enterprise_icon {
+            get {
+                object obj = ResourceManager.GetObject("9044388_enterprise_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cajasparafotoentradaproducto {
             get {
                 object obj = ResourceManager.GetObject("cajasparafotoentradaproducto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap entrada_suplidor_ico {
+            get {
+                object obj = ResourceManager.GetObject("entrada suplidor ico", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

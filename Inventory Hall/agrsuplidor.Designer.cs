@@ -44,6 +44,10 @@
             telefonotxt = new MaskedTextBox();
             rnctxt = new MaskedTextBox();
             entradadesuplidorLB = new Label();
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // nombreLB
@@ -198,11 +202,31 @@
             entradadesuplidorLB.TabIndex = 14;
             entradadesuplidorLB.Text = "ENTRADA DE SUPLIDOR";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources._9044388_enterprise_icon;
+            pictureBox1.Location = new Point(260, 15);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(53, 50);
+            pictureBox1.TabIndex = 15;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources._9043673_3d_mpr_toggle_icon;
+            pictureBox2.Location = new Point(364, 416);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(51, 50);
+            pictureBox2.TabIndex = 16;
+            pictureBox2.TabStop = false;
+            // 
             // agrsuplidor
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(810, 478);
+            Controls.Add(pictureBox2);
+            Controls.Add(pictureBox1);
             Controls.Add(entradadesuplidorLB);
             Controls.Add(rnctxt);
             Controls.Add(telefonotxt);
@@ -225,6 +249,8 @@
             Name = "agrsuplidor";
             Text = "Entrada de Suplidor ";
             Load += agrsuplidor_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -246,5 +272,7 @@
         private MaskedTextBox telefonotxt;
         private MaskedTextBox rnctxt;
         private Label entradadesuplidorLB;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
     }
 }

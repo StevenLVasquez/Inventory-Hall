@@ -304,6 +304,7 @@
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "agrempleado";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Entrada de Empleado";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();

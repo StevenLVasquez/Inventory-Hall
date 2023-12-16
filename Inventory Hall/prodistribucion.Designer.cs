@@ -120,7 +120,10 @@
             Controls.Add(buttonseccionupdate);
             Controls.Add(comboBoxProductIDs);
             Controls.Add(dataGridView1);
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "prodistribucion";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Distribucion de Categoria";
             Load += prodistribucion_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();

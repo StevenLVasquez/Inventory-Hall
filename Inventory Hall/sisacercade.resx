@@ -117,6 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>Este software fue creado por: Jesus Acevedo 2020-2551, Steven Vasquez 2022-2125 y Michael Zorrilla 2022-2135.
+Las Herramientas fueron: SQL version 2019, IDE: Visual Studio version 2022 community, Frameworks: .NET7, lenguaje: C#.
+
+Este programa esta basado en un control de inventario que puede realizar entrada de productos,suplidores y empeleados, al mismo tiempo podemos ver la distribucion de productos y se puede modificar la seccion del mismo y hacer la consulta de todos estos.
+
+Fue creado con el objetivo de proyecto final de la materia Programacion basica(ISW-122-50).
+</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

@@ -29,33 +29,39 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(sisacercade));
-            groupBox1 = new GroupBox();
+            richTextBox1 = new RichTextBox();
             SuspendLayout();
             // 
-            // groupBox1
+            // richTextBox1
             // 
-            groupBox1.Location = new Point(239, 110);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(294, 192);
-            groupBox1.TabIndex = 0;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "hola aqui va info del sistema";
-            groupBox1.Enter += groupBox1_Enter_1;
+            richTextBox1.Enabled = false;
+            richTextBox1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            richTextBox1.Location = new Point(23, 12);
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.ReadOnly = true;
+            richTextBox1.Size = new Size(755, 416);
+            richTextBox1.TabIndex = 0;
+            richTextBox1.Text = resources.GetString("richTextBox1.Text");
+            richTextBox1.TextChanged += richTextBox1_TextChanged;
             // 
             // sisacercade
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(groupBox1);
+            Controls.Add(richTextBox1);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "sisacercade";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Acerca De";
+            Load += sisacercade_Load;
             ResumeLayout(false);
         }
 
         #endregion
 
-        private GroupBox groupBox1;
+        private RichTextBox richTextBox1;
     }
 }

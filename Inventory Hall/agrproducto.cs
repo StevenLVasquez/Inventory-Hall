@@ -32,20 +32,34 @@ namespace Inventory_Hall
 
         private void PopulateCategoriaComboBox()
         {
-            // Assuming that comboBox1 is the name of your ComboBox
             categoriabox.Items.Clear(); // Clear any existing items
+
+            // SQL query to select id and tipo from the 'categoria' table
 
             string query = "SELECT id, tipo FROM categoria";
 
+            // Create a SqlCommand with the query and the database connection
+
+
             using (SqlCommand command = new SqlCommand(query, databaseManager.GetConnection()))
             {
+                // Execute the query and read the results
+
                 using (SqlDataReader reader = command.ExecuteReader())
                 {
+                    // Iterate through the results
+
                     while (reader.Read())
                     {
+                        // Extract id and tipo from the current row
+
                         string id = reader["id"].ToString();
                         string tipo = reader["tipo"].ToString();
+
+                        // Combine id and tipo to create display text
+
                         string displayText = $"{id} - {tipo}"; // Combine id and tipo
+                        // Add the display text to the ComboBox items
                         categoriabox.Items.Add(displayText);
                     }
                 }
@@ -176,15 +190,15 @@ namespace Inventory_Hall
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // You can access the selected category from the ComboBox like this:
             string selectedCategory = categoriabox.SelectedItem?.ToString();
 
-            // Use the selected category as needed in your code
         }
 
 
         private void idsuplidortxt_SelectedIndexChanged(object sender, EventArgs e)
         {
+            // Retrieve the selected item as a string from the idsuplidortxt ComboBox
+
             string selectedSuplidor = idsuplidortxt.SelectedItem?.ToString();
 
         }

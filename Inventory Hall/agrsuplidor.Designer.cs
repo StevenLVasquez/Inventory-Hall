@@ -247,6 +247,7 @@
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "agrsuplidor";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Entrada de Suplidor ";
             Load += agrsuplidor_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

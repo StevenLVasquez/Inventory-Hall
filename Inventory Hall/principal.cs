@@ -2,24 +2,61 @@ using Microsoft.Data.SqlClient;
 using System;
 using System.Configuration;
 
+
+
 namespace Inventory_Hall
 {
     public partial class principal : Form
     {
+        private EnterMessageFilter enterFilter;
+
         public principal()
         {
             InitializeComponent();
 
-            KeyPreview = true; // Enable key preview for the form
-            KeyDown += (sender, e) => { if (e.KeyCode == Keys.Escape) Dispose(); };
+            // Habilitar la vista previa de teclas para el formulario
+            KeyPreview = true;
 
+            // Crear e instalar el filtro para bloquear la tecla Enter
+            enterFilter = new EnterMessageFilter();
+            Application.AddMessageFilter(enterFilter);
+
+            // Manejar el evento KeyDown para evitar el cierre al presionar la tecla Enter o el espacio
+            KeyDown += (sender, e) =>
+            {
+                // Evitar el cierre del formulario al presionar la tecla Enter o el espacio
+                if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Space)
+                {
+                    e.Handled = true;
+                }
+                // Solo cerrar el formulario si se presiona la tecla Esc
+                else if (e.KeyCode == Keys.Escape)
+                {
+                    Dispose();
+                }
+            };
         }
 
-
+        public class EnterMessageFilter : IMessageFilter
+        {
+            public bool PreFilterMessage(ref Message m)
+            {
+                if (m.Msg == 0x0100) // WM_KEYDOWN
+                {
+                    if ((Keys)m.WParam == Keys.Enter)
+                    {
+                        return true; // Bloquear la tecla Enter
+                    }
+                }
+                return false;
+            }
+        }
 
         //disposes the program , meaning it wont consume any resources since it is now completely closed 
         private void btncerrar_Click(object sender, EventArgs e)
         {
+            Application.RemoveMessageFilter(enterFilter);
+
             this.Dispose();
         }
         //menustrip del menu principal (del primer form)
